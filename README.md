@@ -177,6 +177,98 @@ SELECT movie_title,
        COUNT(*)    AS review_count
 FROM reviews
 GROUP BY movie_title;
+```
+Got it 👍 — you want **pure GitHub README Markdown**, **no explanations**, **ready to paste as-is**.
+Here it is **clean, complete, and properly formatted**.
 
 
+## 🚦 Running the Project Locally
+
+To run **Flicks & Giggles** on your local machine:
+
+1. **Clone or download** this repository to your computer.
+2. Install **XAMPP** or **WAMP**, then start the following services:
+
+   * **Apache**
+   * **MySQL**
+3. Copy the project folder into your web root directory, for example:
+
+   ```
+   C:\xampp\htdocs\FlicksAndGiggles
+   ```
+4. Open **phpMyAdmin** at:
+
+   ```
+   http://localhost/phpmyadmin
+   ```
+
+   * Create a new database named **reviewdatabase**.
+   * Import or run the provided SQL script to create the `reviews` table.
+5. Open `config.inc.php` and verify the database connection settings:
+
+   ```php
+   define("DBHOST", "localhost");
+   define("DBNAME", "reviewdatabase");
+   define("DBUSER", "root");
+   define("DBPASS", "");
+   ```
+
+   Update these values if your local MySQL credentials are different.
+6. Open your browser and navigate to:
+
+   ```
+   http://localhost/FlicksAndGiggles/main.html
+   ```
+
+You can now search for movies, submit reviews, browse all reviews, and test the hidden admin edit/delete functionality.
+
+
+## 📚 What We Learned
+
+This project strengthened both our technical skills and our ability to collaborate effectively as a team.
+
+### 🧠 Web Logic & Data Flow
+
+* Built a multi-page website connected through a shared navigation bar and consistent layout.
+* Integrated the OMDb API using `fetch()` and processed JSON responses in JavaScript.
+* Implemented logic for calculating average ratings, trending movies, and recent reviews using browser `localStorage`.
+
+### 🔄 Client–Server Integration
+
+* Used `localStorage` for fast, client-side persistence of reviews.
+* Implemented a PHP backend using PDO to securely communicate with a MySQL database.
+* Practised sending form data from the browser to PHP scripts and inserting it into the database.
+
+### 🗄 Database & SQL
+
+* Designed a focused `reviews` table that maps directly to the review submission form.
+* Used SQL aggregate functions such as `AVG()` and `COUNT()` to compute movie statistics like average ratings and review counts.
+
+### 🎨 UI / UX & Frontend Polish
+
+* Designed reusable movie and review cards with a clean, modern layout.
+* Used responsive CSS techniques (flexbox, grid, and `clamp()`) to ensure readability on different screen sizes.
+* Implemented a modal contact window for better user experience.
+
+### 🤝 Team Collaboration
+
+* Divided responsibilities across frontend design, JavaScript logic, and backend/database work.
+* Coordinated code integration and feature implementation as a group.
+* Gained experience debugging data flow, admin functionality, and browser vs server storage issues.
+
+
+## 🍿 Demo
+
+### 🎥 Project Walkthrough
+
+This demo showcases:
+
+* Movie search using the OMDb API
+* Submitting and browsing reviews
+* Average ratings and trending movies
+* Admin edit and delete functionality
+
+<p align="center">
+  <img src="assets/ScreenRecording2025-12-30040406-ezgif.com-video-to-gif-converter.gif" width="1000">
+</p>
 
