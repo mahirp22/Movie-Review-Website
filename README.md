@@ -5,9 +5,9 @@ Flicks & Giggles is designed to feel like a light version of a modern streaming 
 ## 📦 Technologies
 
 ### Frontend
-- HTML5 (multi-page site: `main`, `Movies`, `BrowseReviews`, `SubmitReview`, `About/Contact`)
-- CSS3 (flexbox layout, responsive design, `clamp()` for fluid typography, modal styling)
-- Vanilla JavaScript (`script.js`)
+- HTML (multi-page site: `main`, `Movies`, `BrowseReviews`, `SubmitReview`, `About/Contact`)
+- CSS (flexbox layout, responsive design, `clamp()` for fluid typography, modal styling)
+- JavaScript (`script.js`)
 
 ### Data & Backend
 - `localStorage` for client-side review storage and calculations
