@@ -16,7 +16,6 @@ Flicks & Giggles is designed to feel like a light version of a modern streaming 
 - MySQL / MariaDB (`reviewdatabase` with `reviews` table)
 - XAMPP / WAMP (Apache + MySQL + PHP stack)
 
----
 
 ## 💡 Features
 
@@ -116,7 +115,6 @@ Here’s what you can do with **Flicks & Giggles**:
   - Mobile
 - `clamp()` is used on font sizes to keep text readable on different screen sizes.
 
----
 
 ## 🧱 System Architecture
 
@@ -157,7 +155,6 @@ The system is split into three main layers:
 
 This architecture lets the project demonstrate both client-side storage patterns and a basic server-side database pipeline.
 
----
 
 ## 🗄 Database Structure
 
